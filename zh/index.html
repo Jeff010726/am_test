@@ -893,6 +893,11 @@
             });
         }
 
+        document.addEventListener('DOMContentLoaded', () => {
+            animateElements();
+            updateNavigation();
+        });
+
         // ========== 键盘导航 ==========
         document.addEventListener('keydown', (e) => {
             const currentDot = document.querySelector('.nav-dot.active');
