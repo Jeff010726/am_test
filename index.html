@@ -32,6 +32,10 @@
             line-height: 1.2;
             overflow-x: hidden;
             letter-spacing: -0.01em;
+            /* 统一字体渲染 */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
         }
 
         /* ========== 边栏抽屉菜单 ========== */
@@ -164,6 +168,10 @@
             line-height: 1.0; /* 修复行高避免重叠 */
             letter-spacing: -0.08em;
             white-space: nowrap; /* 防止换行 */
+            /* 强制统一字体显示 */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .headline {
@@ -841,6 +849,19 @@
         window.addEventListener('load', () => {
             animateElements();
             updateNavigation();
+            
+            // 检测和统一字体显示
+            const displayElements = document.querySelectorAll('.display');
+            displayElements.forEach(element => {
+                const computedStyle = window.getComputedStyle(element);
+                console.log('实际字体:', computedStyle.fontFamily);
+                console.log('设备类型:', /Mobile|Android|iPhone|iPad/.test(navigator.userAgent) ? '移动设备' : '桌面设备');
+                
+                // 强制统一字体
+                element.style.fontFamily = "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+                element.style.webkitFontSmoothing = 'antialiased';
+                element.style.mozOsxFontSmoothing = 'grayscale';
+            });
         });
 
         // ========== 移动端优化 ==========
