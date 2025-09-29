@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aimorelogy | Shenzhen Aimorelogy Co., Ltd.</title>
+    <link rel="icon" type="image/x-icon" href="static/aimorelogy-a.ico">
     <!-- Optimized Inter font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -305,13 +306,30 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 0;
+        }
+
+        .hero-company {
+            margin-top: 1rem;
+            font-size: clamp(1.4rem, 3vw, 2.4rem);
+            font-weight: 200;
+            letter-spacing: -0.04em;
+            color: var(--black);
+        }
+
+        .hero-support {
+            margin-top: 0.5rem;
+            font-size: clamp(1rem, 2.4vw, 1.4rem);
+            color: var(--gray-500);
+            letter-spacing: 0.01em;
         }
 
         .hero-tagline {
-            margin-top: 3rem;
-            padding-top: 3rem;
-            border-top: 1px solid var(--gray-200);
-            color: var(--gray-500);
+            font-size: clamp(1.8rem, 4vw, 3.2rem);
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            color: var(--primary);
+            line-height: 1.15;
         }
 
         /* ========== Second Page: Capabilities Grid ========== */
@@ -682,12 +700,9 @@
             <div class="container">
                 <img src="static/aimorelogy-01.svg" alt="Aimorelogy logo" class="logo fade-in">
                 <div class="hero-content fade-in stagger-1">
-                    <h1 class="display" style="color: var(--primary); margin-bottom: 2rem;">Aimorelogy</h1>
-                    <p class="title" style="color: var(--black); margin-bottom: 1rem;">Shenzhen Aimorelogy Co., Ltd.</p>
-                    <p class="body" style="color: var(--gray-500);">Your Trusted AIoT Solution Partner</p>
-                </div>
-                <div class="hero-tagline fade-in stagger-2">
-                    <p class="body">We Bring Every Concept to Mass Production</p>
+                    <h1 class="hero-tagline">We Bring Every Concept to Mass Production</h1>
+                    <p class="hero-company">Shenzhen Aimorelogy Co., Ltd.</p>
+                    <p class="hero-support">Your Trusted AIoT Solution Partner</p>
                 </div>
             </div>
         </section>

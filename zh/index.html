@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>爱谋科技 | 深圳市爱谋科技有限公司</title>
+    <link rel="icon" type="image/x-icon" href="../static/aimorelogy-a.ico">
     <!-- 优化Inter字体加载，只保留必要请求 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -305,13 +306,30 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 0;
         }
 
         .hero-tagline {
-            margin-top: 3rem;
-            padding-top: 3rem;
-            border-top: 1px solid var(--gray-200);
+            font-size: clamp(1.8rem, 4vw, 3.2rem);
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            color: var(--primary);
+            line-height: 1.15;
+        }
+
+        .hero-company {
+            margin-top: 1rem;
+            font-size: clamp(1.4rem, 3vw, 2.4rem);
+            font-weight: 200;
+            letter-spacing: -0.04em;
+            color: var(--black);
+        }
+
+        .hero-support {
+            margin-top: 0.5rem;
+            font-size: clamp(1rem, 2.4vw, 1.4rem);
             color: var(--gray-500);
+            letter-spacing: 0.01em;
         }
 
         /* ========== 第二页：核心能力网格 ========== */
@@ -682,12 +700,9 @@
             <div class="container">
                 <img src="../static/aimorelogy-01.svg" alt="爱谋科技 Logo" class="logo fade-in">
                 <div class="hero-content fade-in stagger-1">
-                    <h1 class="display" style="color: var(--primary); margin-bottom: 2rem;">爱谋科技</h1>
-                    <p class="title" style="color: var(--black); margin-bottom: 1rem;">深圳市爱谋科技有限公司</p>
-                    <p class="body" style="color: var(--gray-500);">你值得信赖的 AIoT 方案伙伴</p>
-                </div>
-                <div class="hero-tagline fade-in stagger-2">
-                    <p class="body">让每一个方案都能走向量产</p>
+                    <h1 class="hero-tagline">让每一个方案都能走向量产</h1>
+                    <p class="hero-company">深圳市爱谋科技有限公司</p>
+                    <p class="hero-support">你值得信赖的 AIoT 方案伙伴</p>
                 </div>
             </div>
         </section>
