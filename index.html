@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIMORELOGY | 深圳市爱谋科技有限公司</title>
+    <!-- 强制Inter字体多源加载，确保Android也能显示 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+    
+    <!-- 主要Inter字体源 -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- 备用Inter字体源，确保Android设备加载 -->
+    <link href="https://cdn.jsdelivr.net/npm/inter-ui@3.19.3/inter.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+    
+    <!-- 强制字体预加载 -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
     <style>
         * {
             margin: 0;
@@ -26,16 +41,22 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
             color: var(--black);
             background: var(--white);
             line-height: 1.2;
             overflow-x: hidden;
             letter-spacing: -0.01em;
-            /* 统一字体渲染 */
+            /* 强制统一字体渲染 */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
+            font-display: swap;
+            font-variant-ligatures: none;
+            -webkit-text-size-adjust: 100%;
+            /* 确保Inter字体加载 */
+            font-synthesis: weight style;
+            font-optical-sizing: auto;
         }
 
         /* ========== 边栏抽屉菜单 ========== */
@@ -165,13 +186,16 @@
         .display {
             font-size: clamp(4rem, 12vw, 16rem);
             font-weight: 100;
-            line-height: 1.0; /* 修复行高避免重叠 */
+            line-height: 1.0;
             letter-spacing: -0.08em;
-            white-space: nowrap; /* 防止换行 */
-            /* 强制统一字体显示 */
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            white-space: nowrap;
+            /* 强制Inter字体显示但保持原有样式 */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            font-variant-ligatures: none;
+            -webkit-text-size-adjust: 100%;
+            transform: translateZ(0);
         }
 
         .headline {
@@ -179,6 +203,7 @@
             font-weight: 200;
             line-height: 0.85;
             letter-spacing: -0.05em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
         .title {
@@ -186,12 +211,14 @@
             font-weight: 300;
             line-height: 1.1;
             letter-spacing: -0.02em;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
         .body {
             font-size: clamp(1rem, 2.5vw, 1.5rem);
             font-weight: 300;
             line-height: 1.4;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
         .label {
@@ -200,6 +227,18 @@
             line-height: 1.2;
             letter-spacing: 0.05em;
             text-transform: uppercase;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* Android特殊优化类 - 仅在需要时使用 */
+        .android-safe {
+            font-family: 'Roboto', 'Noto Sans', 'Droid Sans', sans-serif !important;
+            font-weight: 400 !important;
+            -webkit-font-smoothing: antialiased !important;
+            -webkit-text-size-adjust: 100% !important;
+            transform: translateZ(0) !important;
+            opacity: 1 !important;
+            visibility: visible !important;
         }
 
         /* ========== 第一页：品牌入场 ========== */
@@ -711,7 +750,7 @@
                 </div>
                 
                 <div class="contact-cta fade-in">
-                    <p class="title" style="color: var(--primary);">让我们一起，把想法变成现实</p>
+                    <p class="title android-safe" style="color: var(--primary);">让我们一起，把想法变成现实</p>
                 </div>
             </div>
         </section>
@@ -850,18 +889,31 @@
             animateElements();
             updateNavigation();
             
-            // 检测和统一字体显示
-            const displayElements = document.querySelectorAll('.display');
-            displayElements.forEach(element => {
-                const computedStyle = window.getComputedStyle(element);
-                console.log('实际字体:', computedStyle.fontFamily);
-                console.log('设备类型:', /Mobile|Android|iPhone|iPad/.test(navigator.userAgent) ? '移动设备' : '桌面设备');
+            // 检测设备类型，仅对Android进行特殊优化
+            const isAndroid = /Android/.test(navigator.userAgent);
+            console.log('设备检测:', isAndroid ? 'Android设备' : '非Android设备');
+            
+            if (isAndroid) {
+                // 仅在Android设备上处理字体问题
+                const displayElements = document.querySelectorAll('.display');
+                displayElements.forEach(element => {
+                    // 保持原有样式，只调整字重避免不可见
+                    if (element.style.fontWeight === '100' || window.getComputedStyle(element).fontWeight === '100') {
+                        element.style.fontWeight = '200'; // 仅在Android上调整
+                        element.style.webkitFontSmoothing = 'antialiased';
+                        element.style.transform = 'translateZ(0)';
+                        console.log('Android优化:', element.textContent);
+                    }
+                });
                 
-                // 强制统一字体
-                element.style.fontFamily = "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
-                element.style.webkitFontSmoothing = 'antialiased';
-                element.style.mozOsxFontSmoothing = 'grayscale';
-            });
+                // 特别处理android-safe元素
+                const androidSafeElements = document.querySelectorAll('.android-safe');
+                androidSafeElements.forEach(element => {
+                    element.style.opacity = '1';
+                    element.style.visibility = 'visible';
+                    element.style.transform = 'translateZ(0)';
+                });
+            }
         });
 
         // ========== 移动端优化 ==========
