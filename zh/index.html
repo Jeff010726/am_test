@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aimorelogy | Shenzhen Aimorelogy Co., Ltd.</title>
-    <!-- Preload multiple Inter font sources to cover Android rendering -->
+    <title>爱谋科技 | 深圳市爱谋科技有限公司</title>
+    <!-- 强制Inter字体多源加载，确保Android也能显示 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     
-    <!-- Primary Inter font source -->
+    <!-- 主要Inter字体源 -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Backup Inter sources to ensure Android loads correctly -->
+    <!-- 备用Inter字体源，确保Android设备加载 -->
     <link href="https://cdn.jsdelivr.net/npm/inter-ui@3.19.3/inter.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
     <style>
@@ -42,19 +42,19 @@
             line-height: 1.2;
             overflow-x: hidden;
             letter-spacing: -0.01em;
-            /* Force consistent font rendering */
+            /* 强制统一字体渲染 */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
             font-display: swap;
             font-variant-ligatures: none;
             -webkit-text-size-adjust: 100%;
-            /* Ensure Inter font loads */
+            /* 确保Inter字体加载 */
             font-synthesis: weight style;
             font-optical-sizing: auto;
         }
 
-        /* ========== Sidebar Drawer Menu ========== */
+        /* ========== 边栏抽屉菜单 ========== */
         .menu-trigger {
             position: fixed;
             top: 2rem;
@@ -209,7 +209,7 @@
             visibility: visible;
         }
 
-        /* ========== Page Containers ========== */
+        /* ========== 页面容器 ========== */
         .page {
             width: 100vw;
             min-height: 100vh;
@@ -225,14 +225,14 @@
             padding: 0 2rem;
         }
 
-        /* ========== Editorial Type Scale ========== */
+        /* ========== 杂志字体层级系统 ========== */
         .display {
             font-size: clamp(4rem, 12vw, 16rem);
             font-weight: 100;
             line-height: 1.0;
             letter-spacing: -0.08em;
             white-space: nowrap;
-            /* Force Inter to render while keeping the original styling */
+            /* 强制Inter字体显示但保持原有样式 */
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -273,7 +273,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
-        /* Android-specific helper class – use only when necessary */
+        /* Android特殊优化类 - 仅在需要时使用 */
         .android-safe {
             font-family: 'Roboto', 'Noto Sans', 'Droid Sans', sans-serif !important;
             font-weight: 400 !important;
@@ -284,7 +284,7 @@
             visibility: visible !important;
         }
 
-        /* ========== First Page: Hero ========== */
+        /* ========== 第一页：品牌入场 ========== */
         .hero {
             background: var(--white);
             text-align: center;
@@ -314,7 +314,7 @@
             color: var(--gray-500);
         }
 
-        /* ========== Second Page: Capabilities Grid ========== */
+        /* ========== 第二页：核心能力网格 ========== */
         .capabilities {
             background: var(--gray-50);
             padding: 6rem 0;
@@ -327,9 +327,9 @@
 
         .cap-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive column layout */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 自适应布局 */
             gap: 4rem 3rem;
-            justify-items: stretch; /* Keep cards spanning the container */
+            justify-items: stretch; /* 卡片充满容器 */
         }
 
         .cap-item {
@@ -365,7 +365,7 @@
             color: var(--gray-500);
         }
 
-        /* ========== Third Page: Case Showcase ========== */
+        /* ========== 第三页：案例展示 ========== */
         .cases {
             background: var(--black);
             color: var(--white);
@@ -444,7 +444,7 @@
             font-weight: 400;
         }
 
-        /* ========== Fourth Page: Contact ========== */
+        /* ========== 第四页：联系我们 ========== */
         .contact {
             background: var(--white);
             padding: 6rem 0;
@@ -482,7 +482,7 @@
             border-top: 1px solid var(--gray-200);
         }
 
-        /* ========== Navigation Dot System ========== */
+        /* ========== 导航点系统 ========== */
         .nav-dots {
             position: fixed;
             right: 2rem;
@@ -508,7 +508,7 @@
             transform: scale(1.2);
         }
 
-        /* ========== Animation System ========== */
+        /* ========== 动画系统 ========== */
         .fade-in {
             opacity: 0;
             transform: translateY(2rem);
@@ -525,9 +525,9 @@
         .stagger-3 { transition-delay: 0.3s; }
         .stagger-4 { transition-delay: 0.4s; }
 
-        /* ========== Responsive Layout Tweaks ========== */
+        /* ========== 移动端响应式 ========== */
         @media (min-width: 1400px) {
-            /* Keep the best layout on wide screens */
+            /* 大屏幕保持最佳显示 */
             .cap-grid {
                 grid-template-columns: repeat(2, 1fr);
                 max-width: 1200px;
@@ -536,7 +536,7 @@
         }
 
         @media (max-width: 1200px) and (min-width: 769px) {
-            /* Preserve symmetry on medium screens */
+            /* 中等屏幕保持对称 */
             .cap-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 3rem 2rem;
@@ -558,13 +558,13 @@
                 padding: 0 1rem;
             }
 
-            /* Single-column layout on small screens */
+            /* 移动端单列布局 */
             .cap-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            /* Prevent line breaks on any device */
+            /* 所有设备都不换行 */
             .display {
                 white-space: nowrap !important;
             }
@@ -627,44 +627,44 @@
     </style>
 </head>
 <body>
-    <!-- Sidebar drawer trigger -->
+    <!-- 边栏抽屉菜单触发器 -->
     <button class="menu-trigger" id="menuTrigger">
         <span class="menu-line"></span>
         <span class="menu-line"></span>
         <span class="menu-line"></span>
     </button>
 
-    <!-- Sidebar navigation -->
+    <!-- 边栏菜单 -->
     <aside class="sidebar" id="sidebar">
         <nav>
             <ul class="sidebar-nav">
-                <li><a href="#page-1" class="nav-link active">Home</a></li>
-                <li><a href="#page-2" class="nav-link">Capabilities</a></li>
-                <li><a href="#page-3" class="nav-link">Case Studies</a></li>
-                <li><a href="#page-4" class="nav-link">Contact</a></li>
+                <li><a href="#page-1" class="nav-link active">首页</a></li>
+                <li><a href="#page-2" class="nav-link">核心能力</a></li>
+                <li><a href="#page-3" class="nav-link">项目案例</a></li>
+                <li><a href="#page-4" class="nav-link">联系我们</a></li>
             </ul>
 
-            <div class="language-switch" role="navigation" aria-label="Language switcher">
+            <div class="language-switch" role="navigation" aria-label="语言切换">
                 <span class="lang-icon" aria-hidden="true">🌐</span>
-                <a href="/" class="lang-link active">EN</a>
+                <a href="/" class="lang-link">EN</a>
                 <span class="lang-divider" aria-hidden="true">/</span>
-                <a href="/zh/" class="lang-link">中文</a>
+                <a href="/zh/" class="lang-link active">中文</a>
             </div>
 
             <div class="sidebar-divider"></div>
 
             <div class="sidebar-info">
-                <p>Shenzhen Aimorelogy Co., Ltd.</p>
+                <p>深圳市爱谋科技有限公司</p>
                 <br>
-                <p>Your trusted AIoT solution partner</p>
+                <p>你值得信赖的 AIoT 方案伙伴</p>
             </div>
         </nav>
     </aside>
 
-    <!-- Sidebar overlay -->
+    <!-- 边栏遮罩 -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-    <!-- Navigation dots -->
+    <!-- 导航点 -->
     <nav class="nav-dots">
         <div class="nav-dot active" data-page="1"></div>
         <div class="nav-dot" data-page="2"></div>
@@ -672,74 +672,74 @@
         <div class="nav-dot" data-page="4"></div>
     </nav>
 
-    <!-- Main content -->
+    <!-- 主内容区域 -->
     <main class="main-content">
-        <!-- First Page: Hero -->
+        <!-- 第一页：品牌入场 -->
         <section class="page hero" id="page-1">
             <div class="container">
-                <img src="static/aimorelogy-01.png" alt="Aimorelogy logo" class="logo fade-in">
+                <img src="../static/aimorelogy-01.png" alt="爱谋科技 Logo" class="logo fade-in">
                 <div class="hero-content fade-in stagger-1">
-                    <h1 class="display" style="color: var(--primary); margin-bottom: 2rem;">Aimorelogy</h1>
-                    <p class="title" style="color: var(--black); margin-bottom: 1rem;">Shenzhen Aimorelogy Co., Ltd.</p>
-                    <p class="body" style="color: var(--gray-500);">Your trusted AIoT solution partner</p>
+                    <h1 class="display" style="color: var(--primary); margin-bottom: 2rem;">爱谋科技</h1>
+                    <p class="title" style="color: var(--black); margin-bottom: 1rem;">深圳市爱谋科技有限公司</p>
+                    <p class="body" style="color: var(--gray-500);">你值得信赖的 AIoT 方案伙伴</p>
                 </div>
                 <div class="hero-tagline fade-in stagger-2">
-                    <p class="body">We bring every concept into mass production</p>
+                    <p class="body">让每一个方案都能走向量产</p>
                 </div>
             </div>
         </section>
 
-        <!-- Second Page: Capabilities -->
+        <!-- 第二页：核心能力 -->
         <section class="page capabilities" id="page-2">
             <div class="container">
                 <div class="cap-header">
-                    <h2 class="headline fade-in" style="color: var(--primary);">Core Capabilities</h2>
+                    <h2 class="headline fade-in" style="color: var(--primary);">核心能力</h2>
                 </div>
                 
                 <div class="cap-grid">
                     <div class="cap-item fade-in stagger-1">
                         <div class="cap-number">01</div>
-                        <h3 class="title cap-title">Chip Selection & Circuit Design</h3>
-                        <p class="body cap-desc">Identify the right silicon, engineer reliable circuit stacks, and keep performance and cost in perfect balance.</p>
+                        <h3 class="title cap-title">芯片选型 & 电路设计</h3>
+                        <p class="body cap-desc">精准选择最适合的芯片方案，设计稳定可靠的电路架构，确保产品性能与成本的最优平衡。</p>
                     </div>
                     
                     <div class="cap-item fade-in stagger-2">
                         <div class="cap-number">02</div>
-                        <h3 class="title cap-title">Driver Integration & App Development</h3>
-                        <p class="body cap-desc">Customize device drivers and craft efficient application layers so hardware and software act as one system.</p>
+                        <h3 class="title cap-title">驱动适配 & 应用开发</h3>
+                        <p class="body cap-desc">深度定制驱动程序，开发高效的应用层软件，实现硬件与软件的完美融合。</p>
                     </div>
                     
                     <div class="cap-item fade-in stagger-3">
                         <div class="cap-number">03</div>
-                        <h3 class="title cap-title">Rapid Prototyping & Optimization</h3>
-                        <p class="body cap-desc">Spin functional prototypes fast, tune power and thermals, and validate stability in the field.</p>
+                        <h3 class="title cap-title">原型机打样 & 优化</h3>
+                        <p class="body cap-desc">快速制作原型机，进行功耗和散热优化，确保产品在实际应用中的稳定性。</p>
                     </div>
                     
                     <div class="cap-item fade-in stagger-4">
                         <div class="cap-number">04</div>
-                        <h3 class="title cap-title">Supply Chain & Manufacturing</h3>
-                        <p class="body cap-desc">Tap Shenzhen’s supply chain early, plan for lead times, alternates, and SMT yield to keep ramps on schedule.</p>
+                        <h3 class="title cap-title">供应链 & 量产管理</h3>
+                        <p class="body cap-desc">依托深圳完整供应链，从设计阶段考虑元器件交期、替代方案和SMT拼板损耗。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Third Page: Case Studies -->
+        <!-- 第三页：项目案例 -->
         <section class="page cases" id="page-3">
             <div class="container">
                 <div class="cases-header">
-                    <h2 class="headline fade-in">Case Studies</h2>
-                    <p class="body fade-in stagger-1" style="opacity: 0.7; margin-top: 1rem;">Seven years of engineering, proven across tens of thousands of devices</p>
+                    <h2 class="headline fade-in">项目案例</h2>
+                    <p class="body fade-in stagger-1" style="opacity: 0.7; margin-top: 1rem;">七年技术沉淀，万台设备验证</p>
                 </div>
-
+                
                 <div class="case-item fade-in stagger-1">
                     <div class="case-meta">
                         <div class="case-number">5000+</div>
-                        <p class="case-label">Devices Deployed</p>
+                        <p class="case-label">台设备部署</p>
                     </div>
                     <div class="case-content">
-                        <h3 class="title case-title">Industrial Motion Controller</h3>
-                        <p class="body case-desc">Built a multi-axis motion platform for manufacturing clients using an ARM Cortex-A9. Real-time Ethernet networking delivers millisecond-level precision control on the factory floor.</p>
+                        <h3 class="title case-title">智能工业控制器</h3>
+                        <p class="body case-desc">为制造业客户开发的多轴运动控制系统，集成ARM Cortex-A9处理器，支持实时以太网通信，实现了毫秒级响应的精密控制。</p>
                         <div class="case-tech">
                             <span class="tech-tag">ARM Cortex-A9</span>
                             <span class="tech-tag">EtherCAT</span>
@@ -752,15 +752,15 @@
                 <div class="case-item fade-in stagger-2">
                     <div class="case-meta">
                         <div class="case-number">30</div>
-                        <p class="case-label">Days of Uptime</p>
+                        <p class="case-label">天续航</p>
                     </div>
                     <div class="case-content">
-                        <h3 class="title case-title">IoT Environmental Station</h3>
-                        <p class="body case-desc">Deployed resilient wireless monitoring stations with an ultra-low-power design, solar charging, and dual 4G/NB-IoT connectivity. Each charge powers 30 days of autonomous operation.</p>
+                        <h3 class="title case-title">物联网环境监测站</h3>
+                        <p class="body case-desc">部署在恶劣环境的无线监测设备，采用低功耗设计，太阳能供电，4G/NB-IoT双模通信。单次充电可连续工作30天。</p>
                         <div class="case-tech">
                             <span class="tech-tag">STM32L4</span>
                             <span class="tech-tag">NB-IoT</span>
-                            <span class="tech-tag">Solar Power</span>
+                            <span class="tech-tag">太阳能</span>
                             <span class="tech-tag">LoRa</span>
                         </div>
                     </div>
@@ -768,32 +768,32 @@
             </div>
         </section>
 
-        <!-- Fourth Page: Contact -->
+        <!-- 第四页：联系我们 -->
         <section class="page contact" id="page-4">
             <div class="container">
                 <div class="contact-header">
-                    <h2 class="headline fade-in" style="color: var(--primary);">Contact Us</h2>
+                    <h2 class="headline fade-in" style="color: var(--primary);">联系我们</h2>
                 </div>
-
+                
                 <div class="contact-grid">
                     <div class="contact-item fade-in stagger-1">
-                        <div class="label contact-label">Address</div>
-                        <p class="body contact-value">Unit 201, Building 1, Fuji Junhuiyuan<br>Nanchang Community, Xixiang, Bao'an, Shenzhen</p>
+                        <div class="label contact-label">公司地址</div>
+                        <p class="body contact-value">深圳市宝安区西乡街道南昌社区<br>富士君荟苑1栋1单元201</p>
                     </div>
-
+                    
                     <div class="contact-item fade-in stagger-2">
-                        <div class="label contact-label">Phone</div>
+                        <div class="label contact-label">联系电话</div>
                         <p class="body contact-value">+86 17606654980</p>
                     </div>
-
+                    
                     <div class="contact-item fade-in stagger-3">
-                        <div class="label contact-label">Email</div>
+                        <div class="label contact-label">邮箱地址</div>
                         <p class="body contact-value">info@aimorelogy.com</p>
                     </div>
                 </div>
-
+                
                 <div class="contact-cta fade-in">
-                    <p class="title android-safe" style="color: var(--primary);">Let’s turn your ideas into reality</p>
+                    <p class="title android-safe" style="color: var(--primary);">让我们一起，把想法变成现实</p>
                 </div>
             </div>
         </section>
@@ -801,12 +801,12 @@
 
     <footer class="footer">
         <div class="container">
-            <p>© Shenzhen Aimorelogy Co., Ltd. All rights reserved.</p>
+            <p>© 深圳市爱谋科技有限公司 保留所有权利</p>
         </div>
     </footer>
 
     <script>
-        // ========== Sidebar menu controls ========== 
+        // ========== 边栏菜单控制 ==========
         const menuTrigger = document.getElementById('menuTrigger');
         const sidebar = document.getElementById('sidebar');
         const sidebarOverlay = document.getElementById('sidebarOverlay');
@@ -831,7 +831,7 @@
         menuTrigger.addEventListener('click', toggleSidebar);
         sidebarOverlay.addEventListener('click', toggleSidebar);
 
-        // Smooth scroll for menu links
+        // 菜单链接点击
         navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -840,14 +840,14 @@
                     behavior: 'smooth' 
                 });
                 
-                // Close the drawer on mobile after navigation
+                // 移动端关闭菜单
                 if (window.innerWidth <= 768) {
                     toggleSidebar();
                 }
             });
         });
 
-        // ========== Navigation dot control ==========
+        // ========== 导航点控制 ==========
         const navDots = document.querySelectorAll('.nav-dot');
         const pages = document.querySelectorAll('.page');
 
@@ -859,7 +859,7 @@
             });
         });
 
-        // ========== Update navigation state on scroll ==========
+        // ========== 滚动更新导航状态 ==========
         function updateNavigation() {
             let current = 0;
             
@@ -870,18 +870,18 @@
                 }
             });
             
-            // Activate the corresponding nav dot
+            // 更新导航点
             navDots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === current);
             });
             
-            // Highlight the matching menu link
+            // 更新菜单链接
             navLinks.forEach((link, index) => {
                 link.classList.toggle('active', index === current);
             });
         }
 
-        // ========== Trigger animations ==========
+        // ========== 动画触发 ==========
         function animateElements() {
             const elements = document.querySelectorAll('.fade-in');
             
@@ -895,7 +895,7 @@
             });
         }
 
-        // ========== Keyboard navigation ==========
+        // ========== 键盘导航 ==========
         document.addEventListener('keydown', (e) => {
             const currentDot = document.querySelector('.nav-dot.active');
             const currentIndex = Array.from(navDots).indexOf(currentDot);
@@ -919,7 +919,7 @@
             }
         });
 
-        // ========== Event listeners ==========
+        // ========== 事件监听 ==========
         let ticking = false;
         
         function onScroll() {
@@ -938,24 +938,24 @@
             animateElements();
             updateNavigation();
             
-            // Detect Android devices to apply font tweaks
+            // 检测设备类型，仅对Android进行特殊优化
             const isAndroid = /Android/.test(navigator.userAgent);
-            console.log('Device detection:', isAndroid ? 'Android device' : 'Non-Android device');
-
+            console.log('设备检测:', isAndroid ? 'Android设备' : '非Android设备');
+            
             if (isAndroid) {
-                // Adjust typography only on Android
+                // 仅在Android设备上处理字体问题
                 const displayElements = document.querySelectorAll('.display');
                 displayElements.forEach(element => {
-                    // Keep styling intact and bump weight to stay visible
+                    // 保持原有样式，只调整字重避免不可见
                     if (element.style.fontWeight === '100' || window.getComputedStyle(element).fontWeight === '100') {
-                        element.style.fontWeight = '200'; // Adjust weight only for Android
+                        element.style.fontWeight = '200'; // 仅在Android上调整
                         element.style.webkitFontSmoothing = 'antialiased';
                         element.style.transform = 'translateZ(0)';
-                        console.log('Android font adjustment:', element.textContent);
+                        console.log('Android优化:', element.textContent);
                     }
                 });
-
-                // Ensure android-safe elements remain visible
+                
+                // 特别处理android-safe元素
                 const androidSafeElements = document.querySelectorAll('.android-safe');
                 androidSafeElements.forEach(element => {
                     element.style.opacity = '1';
@@ -965,16 +965,16 @@
             }
         });
 
-        // ========== Mobile optimizations ==========
+        // ========== 移动端优化 ==========
         window.addEventListener('resize', () => {
             if (window.innerWidth > 768 && sidebar.classList.contains('open')) {
                 document.body.style.overflow = '';
             }
         });
 
-        // ========== GitHub Pages compatibility ==========
+        // ========== GitHub Pages 兼容性 ==========
         if (window.location.hostname.includes('github.io')) {
-            console.log('GitHub Pages environment detected');
+            console.log('GitHub Pages 环境检测到');
         }
     </script>
 </body>
