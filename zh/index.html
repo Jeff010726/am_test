@@ -8,8 +8,23 @@
     <link rel="icon" type="image/x-icon" href="../static/aimorelogy-a.ico">
     <meta name="description" content="CV184XH V1: 视觉·图传·飞控三位一体的 AI 飞控。1.5 TOPS 边缘算力，10公里高清图传，工业级电源设计。">
 
-    <span class="menu-line"></span>
-    <span class="menu-line"></span>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <button class="menu-trigger" id="menuTrigger" aria-label="切换菜单">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
     </button>
 
     <aside class="sidebar" id="sidebar">
@@ -19,107 +34,223 @@
                 <li><a href="#page-2" class="nav-link">CV184XH V1</a></li>
                 <li><a href="#page-3" class="nav-link">核心架构</a></li>
                 <li><a href="#page-4" class="nav-link">边缘 AI</a></li>
-                <div class="nav-dot active" data-page="1"></div>
-                <div class="nav-dot" data-page="2"></div>
-                <div class="nav-dot" data-page="3"></div>
-                <div class="nav-dot" data-page="4"></div>
-                <div class="nav-dot" data-page="5"></div>
-                <div class="nav-dot" data-page="6"></div>
-                <div class="nav-dot" data-page="7"></div>
-                <div class="nav-dot" data-page="8"></div>
-                <div class="nav-dot" data-page="9"></div>
+                <li><a href="#page-5" class="nav-link">视觉与图传</a></li>
+                <li><a href="#page-6" class="nav-link">可靠性</a></li>
+                <li><a href="#page-7" class="nav-link">生态系统</a></li>
+                <li><a href="#page-8" class="nav-link">全栈能力</a></li>
+                <li><a href="#page-9" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="language-switch">
+                <a href="../index.html">EN</a> / <a href="index.html" class="active">CN</a>
+            </div>
         </nav>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-        <main>
-            <!-- 1. Brand Hero (Original) -->
-            <section class="page hero" id="page-1">
-                <div class="container">
-                    <img src="../static/aimorelogy-01.svg" alt="Aimorelogy" class="logo fade-in">
-                    <h1 class="hero-tagline fade-in stagger-1">您值得信赖的 AIoT 解决方案伙伴</h1>
-                    <p class="body fade-in stagger-2">深圳爱莫逻辑科技有限公司</p>
-                </div>
-            </section>
+    <nav class="nav-dots">
+        <div class="nav-dot active" data-page="1"></div>
+        <div class="nav-dot" data-page="2"></div>
+        <div class="nav-dot" data-page="3"></div>
+        <div class="nav-dot" data-page="4"></div>
+        <div class="nav-dot" data-page="5"></div>
+        <div class="nav-dot" data-page="6"></div>
+        <div class="nav-dot" data-page="7"></div>
+        <div class="nav-dot" data-page="8"></div>
+        <div class="nav-dot" data-page="9"></div>
+    </nav>
 
-            <!-- 2. CV184XH V1 Cover -->
-            <section class="page product-hero" id="page-2">
-                <div class="product-hero-bg">
-                    <!-- Background Image Placeholder -->
+    <main>
+        <!-- 1. Brand Hero (Original) -->
+        <section class="page hero" id="page-1">
+            <div class="container">
+                <img src="../static/aimorelogy-01.svg" alt="Aimorelogy" class="logo fade-in">
+                <h1 class="hero-tagline fade-in stagger-1">您值得信赖的 AIoT 解决方案伙伴</h1>
+                <p class="body fade-in stagger-2">深圳爱莫逻辑科技有限公司</p>
+            </div>
+        </section>
+
+        <!-- 2. CV184XH V1 Cover -->
+        <section class="page product-hero" id="page-2">
+            <div class="product-hero-bg">
+                <!-- Background Image Placeholder -->
+            </div>
+            <div class="container">
+                <div class="label fade-in">新品发布</div>
+                <h2 class="headline fade-in stagger-1">CV184XH V1</h2>
+                <div class="title fade-in stagger-2">视觉 · 图传 · 飞控 —— 三位一体，智领飞行</div>
+                <p class="body fade-in stagger-3">Vision. Video Link. Control.</p>
+
+                <!-- Product Visual Placeholder -->
+                <div class="product-visual-placeholder"></div>
+
+                <div class="product-specs fade-in stagger-4">
+                    <div class="spec-item">
+                        <span class="spec-icon">⚡</span>
+                        <div class="label">1.5 TOPS</div>
+                        <div class="body">边缘 AI</div>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-icon">📡</span>
+                        <div class="label">10 KM</div>
+                        <div class="body">高清图传</div>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-icon">🛡️</span>
+                        <div class="label">工业级</div>
+                        <div class="body">电源设计</div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- 3. Core Architecture -->
+        <section class="page core-arch" id="page-3">
+            <div class="core-content">
+                <h2 class="headline fade-in">体积骤减，<br>算力无限。</h2>
+                <p class="body fade-in stagger-1" style="margin-top: 2rem;">
+                    CV184XH V1 是 Aimorelogy 对下一代无人机大脑的终极答案。我们打破了传统“飞控+图传+AI模块”的堆叠范式，将工业级飞控、远距离图传与边缘 AI 计算引擎完美融合于方寸之间。
                 </p>
+                <ul style="margin-top: 2rem; list-style: none;" class="fade-in stagger-2">
+                    <li style="margin-bottom: 1rem;"><strong>极致集成：</strong> 相比传统分体式方案，体积减少 XX%，重量减轻 XX%。</li>
+                    <li style="margin-bottom: 1rem;"><strong>成本革命：</strong> 系统级 BOM 成本大幅降低，为商业客户创造极致性价比。</li>
+                    <li><strong>全栈开放：</strong> 面向商业合作伙伴开放全套软硬件设计资料，支持深度二次开发。</li>
+                </ul>
+            </div>
+            <div class="core-visual fade-in">
+                <div class="core-visual-placeholder">CORE</div>
+            </div>
+        </section>
+
+        <!-- 4. Edge AI Engine -->
+        <section class="page ai-engine" id="page-4">
+            <div class="ai-hud-overlay">
+                <div class="ai-target-box ai-target-1">Target: Car<br>Conf: 98%</div>
+                <div class="ai-target-box ai-target-2">Target: Person<br>Conf: 95%</div>
+            </div>
+            <div class="container">
+                <div class="ai-content">
+                    <div class="ai-stat fade-in">1.5 TOPS</div>
+                    <h2 class="title fade-in stagger-1">NPU 算力引擎</h2>
+                    <p class="body fade-in stagger-2" style="margin-top: 2rem;">
+                        内置高性能 AI 加速单元，无需外挂计算卡即可实现复杂的视觉算法。
+                    </p>
+                    <ul style="margin-top: 2rem; list-style: none;" class="fade-in stagger-3">
+                        <li style="margin-bottom: 1rem;"><strong>智能感知：</strong> 支持多目标实时识别与高精度追踪。</li>
+                        <li style="margin-bottom: 1rem;"><strong>极速响应：</strong> 经典检测算法帧率稳定，延迟低至毫秒级。</li>
+                        <li><strong>灵活部署：</strong> 深度优化的 AI SDK，支持自定义模型（PyTorch/TensorFlow）一键转换与部署。</li>
+                    </ul>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- 7. Ecosystem -->
-            <section class="page ecosystem" id="page-7">
-                <div class="container">
-                    <h2 class="headline fade-in" style="text-align: center;">广泛的硬件兼容性</h2>
+        <!-- 5. Vision & Link -->
+        <section class="page vision-link" id="page-5">
+            <div class="vision-visual fade-in">
+                <div class="vision-visual-placeholder">
+                    [ NIGHT VISION FEED ]
+                </div>
+            </div>
+            <div class="vision-content">
+                <h2 class="headline fade-in">专为机器视觉打造的 ISP</h2>
+                <p class="body fade-in stagger-1" style="margin-top: 2rem;">
+                    <strong>400万像素星光级 Sensor：</strong> 专为低光环境调教，夜间飞行亦如白昼。<br>
+                    <strong>高精度识别源：</strong> 高清画质不仅为了图传，更为了给端侧 AI 提供最精准的分析数据。
+                </p>
 
-                    <div class="partner-grid fade-in stagger-1">
-                        <!-- ESCs -->
-                        <div class="partner-logo">Speedybee</div>
-                        <div class="partner-logo">T-Motor</div>
-                        <div class="partner-logo">Holybro</div>
-                        <div class="partner-logo">Foxeer</div>
-                        <div class="partner-logo">Diatone</div>
-                        <div class="partner-logo">GEPRC</div>
-                        <div class="partner-logo">Flywoo</div>
-                        <div class="partner-logo">iFlight</div>
+                <h2 class="headline fade-in stagger-2" style="margin-top: 4rem;">10KM 级高清图传</h2>
+                <p class="body fade-in stagger-3" style="margin-top: 2rem;">
+                    <strong>板载大功率 Wi-Fi 模块：</strong> 原生支持远距离低延时图像传输。<br>
+                    <strong>稳定可靠：</strong> 实测 4KM-10KM 有效传输距离，针对复杂电磁环境进行抗干扰优化。
+                </p>
+            </div>
+        </section>
 
-                        <!-- VTX -->
-                        <div class="partner-logo">DJI O3</div>
-                        <div class="partner-logo">Walksnail</div>
-                        <div class="partner-logo">HDZero</div>
-                        <div class="partner-logo">TBS Unify</div>
+        <!-- 6. Reliability -->
+        <section class="page reliability" id="page-6">
+            <div class="container">
+                <h2 class="headline fade-in">坚如磐石的电源系统</h2>
+                <div class="chip-macro-placeholder fade-in stagger-1"></div>
+                <p class="body fade-in stagger-2" style="max-width: 800px; margin: 0 auto;">
+                    我们深知电源是飞控的心脏。CV184XH V1 摒弃了消费级 LDO 方案，采用 Texas Instruments (TI) 车规级高压 DC-DC 转换芯片。
+                    <br><br>
+                    <strong>9V / 5V 独立双路 BEC：</strong> 即使大功率外设瞬间负载跳变，也能确保核心飞控系统电压纹丝不动。<br>
+                    <strong>超低纹波噪声：</strong> 为陀螺仪和 AI 芯片提供实验室级的纯净供电，从源头杜绝飞行抖动。<br>
+                    <strong>双重供电滤波：</strong> 配合 ICM-42688P 旗舰陀螺仪，实现极其平滑的飞行手感。
+                </p>
+            </div>
+        </section>
 
-                        <!-- RX -->
-                        <div class="partner-logo">ELRS</div>
-                        <div class="partner-logo">TBS Crossfire</div>
+        <!-- 7. Ecosystem -->
+        <section class="page ecosystem" id="page-7">
+            <div class="container">
+                <h2 class="headline fade-in" style="text-align: center;">广泛的硬件兼容性</h2>
+
+                <div class="partner-grid fade-in stagger-1">
+                    <!-- ESCs -->
+                    <div class="partner-logo">Speedybee</div>
+                    <div class="partner-logo">T-Motor</div>
+                    <div class="partner-logo">Holybro</div>
+                    <div class="partner-logo">Foxeer</div>
+                    <div class="partner-logo">Diatone</div>
+                    <div class="partner-logo">GEPRC</div>
+                    <div class="partner-logo">Flywoo</div>
+                    <div class="partner-logo">iFlight</div>
+
+                    <!-- VTX -->
+                    <div class="partner-logo">DJI O3</div>
+                    <div class="partner-logo">Walksnail</div>
+                    <div class="partner-logo">HDZero</div>
+                    <div class="partner-logo">TBS Unify</div>
+
+                    <!-- RX -->
+                    <div class="partner-logo">ELRS</div>
+                    <div class="partner-logo">TBS Crossfire</div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;" class="fade-in stagger-2">
+                    <div class="label">完善的软件生态</div>
+                    <h3 class="title" style="margin-top: 1rem;">PX4 Autopilot & NuttX OS</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Capabilities (Original) -->
+        <section class="page capabilities" id="page-8">
+            <div class="container">
+                <h2 class="headline fade-in" style="text-align: center; margin-bottom: 4rem;">全栈产品工程能力</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="spec-item fade-in stagger-1"
+                        style="background: #fff; color: #000; border: 1px solid #eee;">
+                        <h3 class="title">芯片选型与电路设计</h3>
+                        <p>从源头把控性能与成本，设计高可靠性电路。</p>
                     </div>
-
-                    <div style="text-align: center; margin-top: 4rem;" class="fade-in stagger-2">
-                        <div class="label">完善的软件生态</div>
-                        <h3 class="title" style="margin-top: 1rem;">PX4 Autopilot & NuttX OS</h3>
+                    <div class="spec-item fade-in stagger-2"
+                        style="background: #fff; color: #000; border: 1px solid #eee;">
+                        <h3 class="title">驱动集成与应用开发</h3>
+                        <p>定制设备驱动，打造高效应用层，实现软硬一体。</p>
+                    </div>
+                    <div class="spec-item fade-in stagger-3"
+                        style="background: #fff; color: #000; border: 1px solid #eee;">
+                        <h3 class="title">快速原型与供应链</h3>
+                        <p>从概念到量产，提供全流程供应链执行服务。</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- 8. Capabilities (Original) -->
-            <section class="page capabilities" id="page-8">
-                <div class="container">
-                    <h2 class="headline fade-in" style="text-align: center; margin-bottom: 4rem;">全栈产品工程能力</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                        <div class="spec-item fade-in stagger-1"
-                            style="background: #fff; color: #000; border: 1px solid #eee;">
-                            <h3 class="title">芯片选型与电路设计</h3>
-                            <p>从源头把控性能与成本，设计高可靠性电路。</p>
-                        </div>
-                        <div class="spec-item fade-in stagger-2"
-                            style="background: #fff; color: #000; border: 1px solid #eee;">
-                            <h3 class="title">驱动集成与应用开发</h3>
-                            <p>定制设备驱动，打造高效应用层，实现软硬一体。</p>
-                        </div>
-                        <div class="spec-item fade-in stagger-3"
-                            style="background: #fff; color: #000; border: 1px solid #eee;">
-                            <h3 class="title">快速原型与供应链</h3>
-                            <p>从概念到量产，提供全流程供应链执行服务。</p>
-                        </div>
-                    </div>
+        <!-- 9. Contact (Original) -->
+        <section class="page contact" id="page-9">
+            <div class="container" style="text-align: center;">
+                <h2 class="headline fade-in">联系我们</h2>
+                <div style="margin-top: 4rem;" class="fade-in stagger-1">
+                    <p class="title">info@aimorelogy.com</p>
+                    <p class="body" style="margin-top: 1rem;">深圳市宝安区西乡街道铁仔路28号朗骏广场2栋A座603-12</p>
                 </div>
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <!-- 9. Contact (Original) -->
-            <section class="page contact" id="page-9">
-                <div class="container" style="text-align: center;">
-                    <h2 class="headline fade-in">联系我们</h2>
-                    <div style="margin-top: 4rem;" class="fade-in stagger-1">
-                        <p class="title">info@aimorelogy.com</p>
-                        <p class="body" style="margin-top: 1rem;">深圳市宝安区西乡街道铁仔路28号朗骏广场2栋A座603-12</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <script src="../js/main.js"></script>
-        </body>
+    <script src="../js/main.js"></script>
+</body>
 
 </html>

@@ -9,8 +9,23 @@
     <meta name="description"
         content="CV184XH V1: The All-in-One AI Flight Controller with 1.5 TOPS Edge AI, 10KM HD Video Link, and Industrial Grade Power.">
 
-    <span class="menu-line"></span>
-    <span class="menu-line"></span>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <button class="menu-trigger" id="menuTrigger" aria-label="Toggle Menu">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
     </button>
 
     <aside class="sidebar" id="sidebar">
@@ -20,109 +35,235 @@
                 <li><a href="#page-2" class="nav-link">CV184XH V1</a></li>
                 <li><a href="#page-3" class="nav-link">Core Architecture</a></li>
                 <li><a href="#page-4" class="nav-link">Edge AI</a></li>
-                <div class="nav-dot active" data-page="1"></div>
-                <div class="nav-dot" data-page="2"></div>
-                <div class="nav-dot" data-page="3"></div>
-                <div class="nav-dot" data-page="4"></div>
-                <div class="nav-dot" data-page="5"></div>
-                <div class="nav-dot" data-page="6"></div>
-                <div class="nav-dot" data-page="7"></div>
-                <div class="nav-dot" data-page="8"></div>
-                <div class="nav-dot" data-page="9"></div>
+                <li><a href="#page-5" class="nav-link">Vision & Link</a></li>
+                <li><a href="#page-6" class="nav-link">Reliability</a></li>
+                <li><a href="#page-7" class="nav-link">Ecosystem</a></li>
+                <li><a href="#page-8" class="nav-link">Capabilities</a></li>
+                <li><a href="#page-9" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="language-switch">
+                <a href="index.html" class="active">EN</a> / <a href="zh/index.html">CN</a>
+            </div>
         </nav>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-        <main>
-            <!-- 1. Brand Hero (Original) -->
-            <section class="page hero" id="page-1">
-                <div class="container">
-                    <img src="static/aimorelogy-01.svg" alt="Aimorelogy" class="logo fade-in">
-                    <h1 class="hero-tagline fade-in stagger-1">Your Trusted AIoT Solution Partner</h1>
-                    <p class="body fade-in stagger-2">Shenzhen Aimorelogy Co., Ltd.</p>
-                </div>
-            </section>
+    <nav class="nav-dots">
+        <div class="nav-dot active" data-page="1"></div>
+        <div class="nav-dot" data-page="2"></div>
+        <div class="nav-dot" data-page="3"></div>
+        <div class="nav-dot" data-page="4"></div>
+        <div class="nav-dot" data-page="5"></div>
+        <div class="nav-dot" data-page="6"></div>
+        <div class="nav-dot" data-page="7"></div>
+        <div class="nav-dot" data-page="8"></div>
+        <div class="nav-dot" data-page="9"></div>
+    </nav>
 
-            <!-- 2. CV184XH V1 Cover -->
-            <section class="page product-hero" id="page-2">
-                <div class="product-hero-bg">
-                    <!-- Background Image Placeholder -->
+    <main>
+        <!-- 1. Brand Hero (Original) -->
+        <section class="page hero" id="page-1">
+            <div class="container">
+                <img src="static/aimorelogy-01.svg" alt="Aimorelogy" class="logo fade-in">
+                <h1 class="hero-tagline fade-in stagger-1">Your Trusted AIoT Solution Partner</h1>
+                <p class="body fade-in stagger-2">Shenzhen Aimorelogy Co., Ltd.</p>
+            </div>
+        </section>
+
+        <!-- 2. CV184XH V1 Cover -->
+        <section class="page product-hero" id="page-2">
+            <div class="product-hero-bg">
+                <!-- Background Image Placeholder -->
+            </div>
+            <div class="container">
+                <div class="label fade-in">New Release</div>
+                <h2 class="headline fade-in stagger-1">CV184XH V1</h2>
+                <div class="title fade-in stagger-2">All-in-One AI Flight Controller</div>
+                <p class="body fade-in stagger-3">Vision. Video Link. Control.</p>
+
+                <!-- Product Visual Placeholder -->
+                <div class="product-visual-placeholder"></div>
+
+                <div class="product-specs fade-in stagger-4">
+                    <div class="spec-item">
+                        <span class="spec-icon">⚡</span>
+                        <div class="label">1.5 TOPS</div>
+                        <div class="body">Edge AI</div>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-icon">📡</span>
+                        <div class="label">10 KM</div>
+                        <div class="body">HD Video Link</div>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-icon">🛡️</span>
+                        <div class="label">Industrial</div>
+                        <div class="body">Grade Power</div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- 3. Core Architecture -->
+        <section class="page core-arch" id="page-3">
+            <div class="core-content">
+                <h2 class="headline fade-in">Less Volume,<br>More Intelligence.</h2>
+                <p class="body fade-in stagger-1" style="margin-top: 2rem;">
+                    CV184XH V1 is Aimorelogy's ultimate answer to the next generation of drone brains. We broke the
+                    traditional stacking paradigm of "Flight Controller + Video Link + AI Module", integrating
+                    industrial-grade flight control, long-range video transmission, and edge AI computing engine into a
+                    square inch.
                 </p>
+                <ul style="margin-top: 2rem; list-style: none;" class="fade-in stagger-2">
+                    <li style="margin-bottom: 1rem;"><strong>Extreme Integration:</strong> Volume reduced by XX%, weight
+                        reduced by XX%.</li>
+                    <li style="margin-bottom: 1rem;"><strong>Cost Revolution:</strong> System-level BOM cost
+                        significantly reduced.</li>
+                    <li><strong>Full Stack Open:</strong> Open hardware and software design for partners.</li>
+                </ul>
+            </div>
+            <div class="core-visual fade-in">
+                <div class="core-visual-placeholder">CORE</div>
+            </div>
+        </section>
+
+        <!-- 4. Edge AI Engine -->
+        <section class="page ai-engine" id="page-4">
+            <div class="ai-hud-overlay">
+                <div class="ai-target-box ai-target-1">Target: Car<br>Conf: 98%</div>
+                <div class="ai-target-box ai-target-2">Target: Person<br>Conf: 95%</div>
+            </div>
+            <div class="container">
+                <div class="ai-content">
+                    <div class="ai-stat fade-in">1.5 TOPS</div>
+                    <h2 class="title fade-in stagger-1">NPU Computing Power</h2>
+                    <p class="body fade-in stagger-2" style="margin-top: 2rem;">
+                        Built-in high-performance AI acceleration unit, enabling complex visual algorithms without
+                        external compute cards.
+                    </p>
+                    <ul style="margin-top: 2rem; list-style: none;" class="fade-in stagger-3">
+                        <li style="margin-bottom: 1rem;"><strong>Smart Sensing:</strong> Multi-target real-time
+                            recognition & tracking.</li>
+                        <li style="margin-bottom: 1rem;"><strong>Fast Response:</strong> Millisecond-level latency for
+                            detection algorithms.</li>
+                        <li><strong>Flexible Deployment:</strong> Optimized AI SDK (PyTorch/TensorFlow support).</li>
+                    </ul>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- 7. Ecosystem -->
-            <section class="page ecosystem" id="page-7">
-                <div class="container">
-                    <h2 class="headline fade-in" style="text-align: center;">Universal Connectivity</h2>
+        <!-- 5. Vision & Link -->
+        <section class="page vision-link" id="page-5">
+            <div class="vision-visual fade-in">
+                <div class="vision-visual-placeholder">
+                    [ NIGHT VISION FEED ]
+                </div>
+            </div>
+            <div class="vision-content">
+                <h2 class="headline fade-in">ISP Built for Machine Vision</h2>
+                <p class="body fade-in stagger-1" style="margin-top: 2rem;">
+                    <strong>4MP Starlight Sensor:</strong> Tuned for low-light environments, making night flight as
+                    clear as day.<br>
+                    <strong>High Precision Source:</strong> HD quality for both transmission and precise AI analysis.
+                </p>
 
-                    <div class="partner-grid fade-in stagger-1">
-                        <!-- ESCs -->
-                        <div class="partner-logo">Speedybee</div>
-                        <div class="partner-logo">T-Motor</div>
-                        <div class="partner-logo">Holybro</div>
-                        <div class="partner-logo">Foxeer</div>
-                        <div class="partner-logo">Diatone</div>
-                        <div class="partner-logo">GEPRC</div>
-                        <div class="partner-logo">Flywoo</div>
-                        <div class="partner-logo">iFlight</div>
+                <h2 class="headline fade-in stagger-2" style="margin-top: 4rem;">10KM HD Video Link</h2>
+                <p class="body fade-in stagger-3" style="margin-top: 2rem;">
+                    <strong>Ultra-Long Range Wi-Fi:</strong> Native support for long-distance low-latency
+                    transmission.<br>
+                    <strong>Stable & Reliable:</strong> Tested 4KM-10KM effective range with anti-interference
+                    optimization.
+                </p>
+            </div>
+        </section>
 
-                        <!-- VTX -->
-                        <div class="partner-logo">DJI O3</div>
-                        <div class="partner-logo">Walksnail</div>
-                        <div class="partner-logo">HDZero</div>
-                        <div class="partner-logo">TBS Unify</div>
+        <!-- 6. Reliability -->
+        <section class="page reliability" id="page-6">
+            <div class="container">
+                <h2 class="headline fade-in">Industrial-Grade Power Architecture</h2>
+                <div class="chip-macro-placeholder fade-in stagger-1"></div>
+                <p class="body fade-in stagger-2" style="max-width: 800px; margin: 0 auto;">
+                    CV184XH V1 uses Texas Instruments (TI) automotive-grade high-voltage DC-DC converters.
+                    <br><br>
+                    <strong>9V / 5V Dual BEC:</strong> Stable voltage even under load jumps.<br>
+                    <strong>Low Ripple Noise:</strong> Lab-grade pure power supply for Gyro and AI chips.<br>
+                    <strong>Dual Filtering:</strong> Paired with ICM-42688P flagship gyro for smooth flight.
+                </p>
+            </div>
+        </section>
 
-                        <!-- RX -->
-                        <div class="partner-logo">ELRS</div>
-                        <div class="partner-logo">TBS Crossfire</div>
+        <!-- 7. Ecosystem -->
+        <section class="page ecosystem" id="page-7">
+            <div class="container">
+                <h2 class="headline fade-in" style="text-align: center;">Universal Connectivity</h2>
+
+                <div class="partner-grid fade-in stagger-1">
+                    <!-- ESCs -->
+                    <div class="partner-logo">Speedybee</div>
+                    <div class="partner-logo">T-Motor</div>
+                    <div class="partner-logo">Holybro</div>
+                    <div class="partner-logo">Foxeer</div>
+                    <div class="partner-logo">Diatone</div>
+                    <div class="partner-logo">GEPRC</div>
+                    <div class="partner-logo">Flywoo</div>
+                    <div class="partner-logo">iFlight</div>
+
+                    <!-- VTX -->
+                    <div class="partner-logo">DJI O3</div>
+                    <div class="partner-logo">Walksnail</div>
+                    <div class="partner-logo">HDZero</div>
+                    <div class="partner-logo">TBS Unify</div>
+
+                    <!-- RX -->
+                    <div class="partner-logo">ELRS</div>
+                    <div class="partner-logo">TBS Crossfire</div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;" class="fade-in stagger-2">
+                    <div class="label">Software Support</div>
+                    <h3 class="title" style="margin-top: 1rem;">PX4 Autopilot & NuttX OS</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Capabilities (Original) -->
+        <section class="page capabilities" id="page-8">
+            <div class="container">
+                <h2 class="headline fade-in" style="text-align: center; margin-bottom: 4rem;">Full-Stack Engineering
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="spec-item fade-in stagger-1"
+                        style="background: #fff; color: #000; border: 1px solid #eee;">
+                        <h3 class="title">Chip Selection</h3>
+                        <p>Select the right silicon, engineer reliable circuit stacks.</p>
                     </div>
-
-                    <div style="text-align: center; margin-top: 4rem;" class="fade-in stagger-2">
-                        <div class="label">Software Support</div>
-                        <h3 class="title" style="margin-top: 1rem;">PX4 Autopilot & NuttX OS</h3>
+                    <div class="spec-item fade-in stagger-2"
+                        style="background: #fff; color: #000; border: 1px solid #eee;">
+                        <h3 class="title">Driver Integration</h3>
+                        <p>Custom-build device drivers and craft efficient application layers.</p>
+                    </div>
+                    <div class="spec-item fade-in stagger-3"
+                        style="background: #fff; color: #000; border: 1px solid #eee;">
+                        <h3 class="title">Supply Chain</h3>
+                        <p>Rapid prototyping and supply chain execution.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- 8. Capabilities (Original) -->
-            <section class="page capabilities" id="page-8">
-                <div class="container">
-                    <h2 class="headline fade-in" style="text-align: center; margin-bottom: 4rem;">Full-Stack Engineering
-                    </h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                        <div class="spec-item fade-in stagger-1"
-                            style="background: #fff; color: #000; border: 1px solid #eee;">
-                            <h3 class="title">Chip Selection</h3>
-                            <p>Select the right silicon, engineer reliable circuit stacks.</p>
-                        </div>
-                        <div class="spec-item fade-in stagger-2"
-                            style="background: #fff; color: #000; border: 1px solid #eee;">
-                            <h3 class="title">Driver Integration</h3>
-                            <p>Custom-build device drivers and craft efficient application layers.</p>
-                        </div>
-                        <div class="spec-item fade-in stagger-3"
-                            style="background: #fff; color: #000; border: 1px solid #eee;">
-                            <h3 class="title">Supply Chain</h3>
-                            <p>Rapid prototyping and supply chain execution.</p>
-                        </div>
-                    </div>
+        <!-- 9. Contact (Original) -->
+        <section class="page contact" id="page-9">
+            <div class="container" style="text-align: center;">
+                <h2 class="headline fade-in">Contact Us</h2>
+                <div style="margin-top: 4rem;" class="fade-in stagger-1">
+                    <p class="title">info@aimorelogy.com</p>
+                    <p class="body" style="margin-top: 1rem;">Room 603-12, Block A, Tower 2, Langjun Plaza, Shenzhen</p>
                 </div>
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <!-- 9. Contact (Original) -->
-            <section class="page contact" id="page-9">
-                <div class="container" style="text-align: center;">
-                    <h2 class="headline fade-in">Contact Us</h2>
-                    <div style="margin-top: 4rem;" class="fade-in stagger-1">
-                        <p class="title">info@aimorelogy.com</p>
-                        <p class="body" style="margin-top: 1rem;">Room 603-12, Block A, Tower 2, Langjun Plaza, Shenzhen
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <script src="js/main.js"></script>
-        </body>
+    <script src="js/main.js"></script>
+</body>
 
 </html>
