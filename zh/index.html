@@ -1,1068 +1,139 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>爱谋科技 | 深圳市爱谋科技有限公司</title>
+    <title>Aimorelogy | CV184XH V1 AI 飞控</title>
     <link rel="icon" type="image/x-icon" href="../static/aimorelogy-a.ico">
-    <!-- ========== SEO Meta Tags ========== -->
-    <meta name="description" content="你值得信赖的 AIoT 方案伙伴。专注 AIoT 方案，覆盖芯片选型、电路设计、驱动与应用集成、快速打样以及规模化量产，全流程可靠交付。">
-    <meta name="keywords" content="Aimorelogy,爱谋科技,AIoT,人工智能,物联网方案,企业级AI,深圳AI公司">
-    <meta name="author" content="深圳市爱谋科技有限公司">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="language" content="zh-CN">
-    <link rel="canonical" href="https://aimorelogy.com/zh/">
-    <link rel="alternate" hreflang="en" href="https://aimorelogy.com/">
-    <link rel="alternate" hreflang="zh-CN" href="https://aimorelogy.com/zh/">
-    <link rel="alternate" hreflang="x-default" href="https://aimorelogy.com/">
-    <!-- ========== Open Graph | Twitter Cards ========== -->
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="zh_CN">
-    <meta property="og:locale:alternate" content="en_US">
-    <meta property="og:title" content="爱谋科技 | 你值得信赖的 AIoT 方案伙伴">
-    <meta property="og:description" content="你值得信赖的 AIoT 方案伙伴。专注 AIoT 方案，覆盖芯片选型、电路设计、驱动与应用集成、快速打样以及规模化量产，全流程可靠交付。">
-    <meta property="og:url" content="https://aimorelogy.com/zh/">
-    <meta property="og:site_name" content="爱谋科技">
-    <meta property="og:image" content="https://aimorelogy.com/static/aimorelogy-01.svg">
-    <meta property="og:image:alt" content="爱谋科技品牌标识">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="爱谋科技 | 你值得信赖的 AIoT 方案伙伴">
-    <meta name="twitter:description" content="你值得信赖的 AIoT 方案伙伴。专注 AIoT 方案，覆盖芯片选型、电路设计、驱动与应用集成、快速打样以及规模化量产，全流程可靠交付。">
-    <meta name="twitter:image" content="https://aimorelogy.com/static/aimorelogy-01.svg">
-    <!-- 优化Inter字体加载，只保留必要请求 -->
+    <meta name="description" content="CV184XH V1: 视觉·图传·飞控三位一体的 AI 飞控。1.5 TOPS 边缘算力，10公里高清图传，工业级电源设计。">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.loli.net" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.loli.net/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
-        <link rel="stylesheet" href="https://fonts.loli.net/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
-    </noscript>
-    <!-- ========== Structured Data ========== -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "Organization",
-                    "@id": "https://aimorelogy.com/#organization",
-                    "name": "深圳市爱谋科技有限公司",
-                    "alternateName": "爱谋科技",
-                    "url": "https://aimorelogy.com/",
-                    "logo": "https://aimorelogy.com/static/aimorelogy-01.svg",
-                    "description": "你值得信赖的 AIoT 方案伙伴。专注 AIoT 方案，覆盖芯片选型、电路设计、驱动与应用集成、快速打样以及规模化量产，全流程可靠交付。",
-                    "foundingDate": "2018",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Room 603-12, Block A, Tower 2, Langjun Plaza, No.28 Tiezai Road",
-                        "addressLocality": "Shenzhen",
-                        "addressRegion": "Guangdong",
-                        "addressCountry": "CN"
-                    },
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "email": "info@aimorelogy.com",
-                        "contactType": "customer support",
-                        "availableLanguage": [
-                            "zh-CN",
-                            "en"
-                        ],
-                        "areaServed": "CN"
-                    }
-                },
-                {
-                    "@type": "WebSite",
-                    "@id": "https://aimorelogy.com/#website",
-                    "url": "https://aimorelogy.com/zh/",
-                    "name": "爱谋科技 | 你值得信赖的 AIoT 方案伙伴",
-                    "alternateName": "爱谋科技官网",
-                    "inLanguage": "zh-CN",
-                    "publisher": {
-                        "@id": "https://aimorelogy.com/#organization"
-                    }
-                }
-            ]
-        }
-    </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #4f4398;
-            --black: #0a0a0a;
-            --white: #ffffff;
-            --gray-50: #fafafa;
-            --gray-100: #f5f5f5;
-            --gray-200: #e5e5e5;
-            --gray-300: #d4d4d4;
-            --gray-400: #a3a3a3;
-            --gray-500: #737373;
-            --gray-900: #111111;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-            color: var(--black);
-            background: var(--white);
-            line-height: 1.2;
-            overflow-x: hidden;
-            letter-spacing: -0.01em;
-            /* 强制统一字体渲染 */
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
-            font-display: swap;
-            font-variant-ligatures: none;
-            -webkit-text-size-adjust: 100%;
-            /* 确保Inter字体加载 */
-            font-synthesis: weight style;
-            font-optical-sizing: auto;
-        }
-
-        /* ========== 边栏抽屉菜单 ========== */
-        .menu-trigger {
-            position: fixed;
-            top: 2rem;
-            left: 2rem;
-            z-index: 1000;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-
-        .menu-line {
-            width: 20px;
-            height: 1px;
-            background: var(--black);
-            transition: all 0.3s ease;
-        }
-
-        .menu-trigger.active .menu-line:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-
-        .menu-trigger.active .menu-line:nth-child(2) {
-            opacity: 0;
-        }
-
-        .menu-trigger.active .menu-line:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -6px);
-        }
-
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: -300px;
-            width: 300px;
-            height: 100vh;
-            background: var(--white);
-            border-right: 1px solid var(--gray-200);
-            z-index: 999;
-            transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            padding: 6rem 2rem 2rem;
-            overflow-y: auto;
-        }
-
-        .sidebar.open {
-            left: 0;
-        }
-
-        .sidebar-nav {
-            list-style: none;
-        }
-
-        .sidebar-nav li {
-            margin-bottom: 2rem;
-        }
-
-        .sidebar-nav a {
-            color: var(--black);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            transition: color 0.2s ease;
-            display: block;
-            padding: 0.5rem 0;
-        }
-
-        .sidebar-nav a:hover,
-        .sidebar-nav a.active {
-            color: var(--primary);
-        }
-
-        .sidebar-divider {
-            height: 1px;
-            background: var(--gray-200);
-            margin: 3rem 0;
-        }
-
-        .sidebar-info {
-            font-size: 0.8rem;
-            color: var(--gray-500);
-            line-height: 1.4;
-        }
-
-        .language-switch {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-top: 2.5rem;
-            padding-top: 2.5rem;
-            border-top: 1px solid var(--gray-200);
-            font-size: 0.8rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--gray-400);
-        }
-
-        .language-switch .lang-icon {
-            font-size: 0.95rem;
-            color: var(--primary);
-        }
-
-        .language-switch .lang-link {
-            text-decoration: none;
-            color: var(--gray-500);
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-
-        .language-switch .lang-link:hover {
-            color: var(--primary);
-        }
-
-        .language-switch .lang-link.active {
-            color: var(--primary);
-        }
-
-        .language-switch .lang-divider {
-            font-size: 0.75rem;
-            color: var(--gray-300);
-        }
-
-        .footer {
-            margin-top: 4rem;
-            padding: 2rem 0;
-            text-align: center;
-            border-top: 1px solid var(--gray-200);
-            color: var(--gray-500);
-            font-size: 0.85rem;
-            letter-spacing: 0.04em;
-        }
-
-        .sidebar-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.3);
-            z-index: 998;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .sidebar-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* ========== 页面容器 ========== */
-        .page {
-            width: 100vw;
-            min-height: 100vh;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .container {
-            width: min(90vw, 1400px);
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* ========== 杂志字体层级系统 ========== */
-        .display {
-            font-size: clamp(4rem, 12vw, 16rem);
-            font-weight: 100;
-            line-height: 1.0;
-            letter-spacing: -0.08em;
-            white-space: nowrap;
-            /* 强制Inter字体显示但保持原有样式 */
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-variant-ligatures: none;
-            -webkit-text-size-adjust: 100%;
-            transform: translateZ(0);
-        }
-
-        .headline {
-            font-size: clamp(2.5rem, 8vw, 8rem);
-            font-weight: 200;
-            line-height: 0.85;
-            letter-spacing: -0.05em;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        .title {
-            font-size: clamp(1.5rem, 4vw, 3rem);
-            font-weight: 300;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        .body {
-            font-size: clamp(1rem, 2.5vw, 1.5rem);
-            font-weight: 300;
-            line-height: 1.4;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        .label {
-            font-size: clamp(0.8rem, 1.5vw, 1rem);
-            font-weight: 500;
-            line-height: 1.2;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        /* Android特殊优化类 - 仅在需要时使用 */
-        .android-safe {
-            font-family: 'Roboto', 'Noto Sans', 'Droid Sans', sans-serif !important;
-            font-weight: 400 !important;
-            -webkit-font-smoothing: antialiased !important;
-            -webkit-text-size-adjust: 100% !important;
-            transform: translateZ(0) !important;
-            opacity: 1 !important;
-            visibility: visible !important;
-        }
-
-        /* ========== 第一页：品牌入场 ========== */
-        .hero {
-            background: var(--white);
-            text-align: center;
-            padding: 4rem 0;
-        }
-
-        .logo {
-            width: clamp(300px, 50vw, 700px);
-            height: auto;
-            margin-bottom: 4rem;
-            filter: drop-shadow(0 2px 20px rgba(0,0,0,0.04));
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0;
-        }
-
-        .hero-tagline {
-            font-size: clamp(1.8rem, 4vw, 3.2rem);
-            font-weight: 300;
-            letter-spacing: -0.02em;
-            color: var(--primary);
-            line-height: 1.15;
-        }
-
-        .hero-company {
-            margin-top: 1rem;
-            font-size: clamp(1.4rem, 3vw, 2.4rem);
-            font-weight: 200;
-            letter-spacing: -0.04em;
-            color: var(--black);
-        }
-
-        .hero-support {
-            margin-top: 0.5rem;
-            font-size: clamp(1rem, 2.4vw, 1.4rem);
-            color: var(--gray-500);
-            letter-spacing: 0.01em;
-        }
-
-        /* ========== 第二页：核心能力网格 ========== */
-        .capabilities {
-            background: var(--gray-50);
-            padding: 6rem 0;
-        }
-
-        .cap-header {
-            text-align: center;
-            margin-bottom: 6rem;
-        }
-
-        .cap-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 自适应布局 */
-            gap: 4rem 3rem;
-            justify-items: stretch; /* 卡片充满容器 */
-        }
-
-        .cap-item {
-            background: var(--white);
-            padding: 3rem;
-            border: 1px solid var(--gray-200);
-            position: relative;
-            transition: all 0.3s ease;
-        }
-
-        .cap-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-            border-color: var(--primary);
-        }
-
-        .cap-number {
-            position: absolute;
-            top: -1rem;
-            right: 2rem;
-            font-size: 4rem;
-            font-weight: 100;
-            color: var(--primary);
-            opacity: 0.2;
-        }
-
-        .cap-title {
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            font-size: clamp(1.3rem, 3.2vw, 2.25rem);
-            line-height: 1.15;
-            white-space: normal;
-        }
-
-        .cap-desc {
-            color: var(--gray-500);
-        }
-
-        /* ========== 第三页：案例展示 ========== */
-        .cases {
-            background: var(--black);
-            color: var(--white);
-            padding: 6rem 0;
-        }
-
-        .cases-header {
-            text-align: center;
-            margin-bottom: 6rem;
-        }
-
-        .case-item {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 4rem;
-            align-items: center;
-            margin-bottom: 6rem;
-            padding: 3rem 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .case-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-
-        .case-item:nth-child(even) {
-            grid-template-columns: 2fr 1fr;
-        }
-
-        .case-item:nth-child(even) .case-meta {
-            order: 2;
-        }
-
-        .case-item:nth-child(even) .case-content {
-            order: 1;
-        }
-
-        .case-meta {
-            text-align: center;
-        }
-
-        .case-number {
-            font-size: clamp(6rem, 15vw, 12rem);
-            font-weight: 100;
-            opacity: 0.15;
-            line-height: 0.8;
-        }
-
-        .case-label {
-            font-size: 0.9rem;
-            opacity: 0.6;
-            margin-top: 1rem;
-        }
-
-        .case-title {
-            margin-bottom: 1.5rem;
-        }
-
-        .case-desc {
-            opacity: 0.8;
-            margin-bottom: 2rem;
-        }
-
-        .case-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
-
-        .tech-tag {
-            padding: 0.5rem 1rem;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            font-size: 0.8rem;
-            font-weight: 400;
-        }
-
-        /* ========== 第四页：联系我们 ========== */
-        .contact {
-            background: var(--white);
-            padding: 6rem 0;
-        }
-
-        .contact-header {
-            text-align: center;
-            margin-bottom: 6rem;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-        }
-
-        .contact-item {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .contact-label {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .contact-value {
-            color: var(--gray-500);
-        }
-
-        .contact-cta {
-            text-align: center;
-            margin-top: 6rem;
-            padding-top: 3rem;
-            border-top: 1px solid var(--gray-200);
-        }
-
-        /* ========== 导航点系统 ========== */
-        .nav-dots {
-            position: fixed;
-            right: 2rem;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 100;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .nav-dot {
-            width: 8px;
-            height: 8px;
-            border: 1px solid var(--primary);
-            background: transparent;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .nav-dot.active {
-            background: var(--primary);
-            transform: scale(1.2);
-        }
-
-        /* ========== 动画系统 ========== */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(2rem);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .stagger-1 { transition-delay: 0.1s; }
-        .stagger-2 { transition-delay: 0.2s; }
-        .stagger-3 { transition-delay: 0.3s; }
-        .stagger-4 { transition-delay: 0.4s; }
-
-        /* ========== 移动端响应式 ========== */
-        @media (min-width: 1400px) {
-            /* 大屏幕保持最佳显示 */
-            .cap-grid {
-                grid-template-columns: repeat(2, 1fr);
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-        }
-
-        @media (max-width: 1200px) and (min-width: 769px) {
-            /* 中等屏幕保持对称 */
-            .cap-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 3rem 2rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 280px;
-            }
-
-            .menu-trigger {
-                top: 1.5rem;
-                left: 1.5rem;
-            }
-
-            .container {
-                width: 95vw;
-                padding: 0 1rem;
-            }
-
-            /* 移动端单列布局 */
-            .cap-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            /* 所有设备都不换行 */
-            .display {
-                white-space: nowrap !important;
-            }
-
-            .case-item,
-            .case-item:nth-child(even) {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                text-align: center;
-            }
-
-            .case-item:nth-child(even) .case-meta,
-            .case-item:nth-child(even) .case-content {
-                order: initial;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .nav-dots {
-                right: 1rem;
-                gap: 0.8rem;
-            }
-
-            .nav-dot {
-                width: 6px;
-                height: 6px;
-            }
-
-        }
-
-        @media (max-width: 480px) {
-            .hero {
-                padding: 2rem 0;
-            }
-
-            .capabilities,
-            .cases,
-            .contact {
-                padding: 4rem 0;
-            }
-
-            .cap-header,
-            .cases-header,
-            .contact-header {
-                margin-bottom: 4rem;
-            }
-
-            .cap-item {
-                padding: 2rem;
-            }
-
-            .case-item {
-                margin-bottom: 4rem;
-                padding: 2rem 0;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <!-- 边栏抽屉菜单触发器 -->
-    <button class="menu-trigger" id="menuTrigger">
+    <!-- Navigation -->
+    <button class="menu-trigger" id="menuTrigger" aria-label="切换菜单">
         <span class="menu-line"></span>
         <span class="menu-line"></span>
         <span class="menu-line"></span>
     </button>
 
-    <!-- 边栏菜单 -->
     <aside class="sidebar" id="sidebar">
         <nav>
             <ul class="sidebar-nav">
-                <li><a href="#page-1" class="nav-link active">首页</a></li>
-                <li><a href="#page-2" class="nav-link">核心能力</a></li>
-                <li><a href="#page-3" class="nav-link">项目案例</a></li>
-                <li><a href="#page-4" class="nav-link">联系我们</a></li>
-            </ul>
-
-            <div class="language-switch" role="navigation" aria-label="语言切换">
-                <span class="lang-icon" aria-hidden="true">🌐</span>
-                <a href="/" class="lang-link">EN</a>
-                <span class="lang-divider" aria-hidden="true">/</span>
-                <a href="/zh/" class="lang-link active">中文</a>
-            </div>
-
-            <div class="sidebar-divider"></div>
-
-            <div class="sidebar-info">
-                <p>深圳市爱谋科技有限公司</p>
-                <br>
-                <p>你值得信赖的 AIoT 方案伙伴</p>
-            </div>
+                <li><a href="#page-1" class="nav-link">首页</a></li>
+                <li><a href="#page-2" class="nav-link">CV184XH V1</a></li>
+                <li><a href="#page-3" class="nav-link">核心架构</a></li>
+                <li><a href="#page-4" class="nav-link">边缘 AI</a></li>
+                <div class="nav-dot active" data-page="1"></div>
+                <div class="nav-dot" data-page="2"></div>
+                <div class="nav-dot" data-page="3"></div>
+                <div class="nav-dot" data-page="4"></div>
+                <div class="nav-dot" data-page="5"></div>
+                <div class="nav-dot" data-page="6"></div>
+                <div class="nav-dot" data-page="7"></div>
+                <div class="nav-dot" data-page="8"></div>
+                <div class="nav-dot" data-page="9"></div>
         </nav>
-    </aside>
 
-    <!-- 边栏遮罩 -->
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-
-    <!-- 导航点 -->
-    <nav class="nav-dots">
-        <div class="nav-dot active" data-page="1"></div>
-        <div class="nav-dot" data-page="2"></div>
-        <div class="nav-dot" data-page="3"></div>
-        <div class="nav-dot" data-page="4"></div>
-    </nav>
-
-    <!-- 主内容区域 -->
-    <main class="main-content">
-        <!-- 第一页：品牌入场 -->
-        <section class="page hero" id="page-1">
-            <div class="container">
-                <img src="../static/aimorelogy-01.svg" alt="爱谋科技 Logo" class="logo fade-in">
-                <div class="hero-content fade-in stagger-1">
-                    <h1 class="hero-tagline">你值得信赖的 AIoT 方案伙伴</h1>
-                    <p class="hero-company">深圳市爱谋科技有限公司</p>
+        <main>
+            <!-- 1. Brand Hero (Original) -->
+            <section class="page hero" id="page-1">
+                <div class="container">
+                    <img src="../static/aimorelogy-01.svg" alt="Aimorelogy" class="logo fade-in">
+                    <h1 class="hero-tagline fade-in stagger-1">您值得信赖的 AIoT 解决方案伙伴</h1>
+                    <p class="body fade-in stagger-2">深圳爱莫逻辑科技有限公司</p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 第二页：核心能力 -->
-        <section class="page capabilities" id="page-2">
-            <div class="container">
-                <div class="cap-header">
-                    <h2 class="headline fade-in" style="color: var(--primary);">核心能力</h2>
+            <!-- 2. CV184XH V1 Cover -->
+            <section class="page product-hero" id="page-2">
+                <div class="product-hero-bg">
+                    <!-- Background Image Placeholder -->
                 </div>
-                
-                <div class="cap-grid">
-                    <div class="cap-item fade-in stagger-1">
-                        <div class="cap-number">01</div>
-                        <h3 class="title cap-title">芯片选型 & 电路设计</h3>
-                        <p class="body cap-desc">精准选择最适合的芯片方案，设计稳定可靠的电路架构，确保产品性能与成本的最优平衡。</p>
+                </p>
+                </div>
+            </section>
+
+            <!-- 7. Ecosystem -->
+            <section class="page ecosystem" id="page-7">
+                <div class="container">
+                    <h2 class="headline fade-in" style="text-align: center;">广泛的硬件兼容性</h2>
+
+                    <div class="partner-grid fade-in stagger-1">
+                        <!-- ESCs -->
+                        <div class="partner-logo">Speedybee</div>
+                        <div class="partner-logo">T-Motor</div>
+                        <div class="partner-logo">Holybro</div>
+                        <div class="partner-logo">Foxeer</div>
+                        <div class="partner-logo">Diatone</div>
+                        <div class="partner-logo">GEPRC</div>
+                        <div class="partner-logo">Flywoo</div>
+                        <div class="partner-logo">iFlight</div>
+
+                        <!-- VTX -->
+                        <div class="partner-logo">DJI O3</div>
+                        <div class="partner-logo">Walksnail</div>
+                        <div class="partner-logo">HDZero</div>
+                        <div class="partner-logo">TBS Unify</div>
+
+                        <!-- RX -->
+                        <div class="partner-logo">ELRS</div>
+                        <div class="partner-logo">TBS Crossfire</div>
                     </div>
-                    
-                    <div class="cap-item fade-in stagger-2">
-                        <div class="cap-number">02</div>
-                        <h3 class="title cap-title">驱动适配 & 应用开发</h3>
-                        <p class="body cap-desc">深度定制驱动程序，开发高效的应用层软件，实现硬件与软件的完美融合。</p>
-                    </div>
-                    
-                    <div class="cap-item fade-in stagger-3">
-                        <div class="cap-number">03</div>
-                        <h3 class="title cap-title">原型机打样 & 优化</h3>
-                        <p class="body cap-desc">快速制作原型机，进行功耗和散热优化，确保产品在实际应用中的稳定性。</p>
-                    </div>
-                    
-                    <div class="cap-item fade-in stagger-4">
-                        <div class="cap-number">04</div>
-                        <h3 class="title cap-title">供应链 & 量产管理</h3>
-                        <p class="body cap-desc">依托深圳完整供应链，从设计阶段考虑元器件交期、替代方案和 SMT 拼板损耗。</p>
+
+                    <div style="text-align: center; margin-top: 4rem;" class="fade-in stagger-2">
+                        <div class="label">完善的软件生态</div>
+                        <h3 class="title" style="margin-top: 1rem;">PX4 Autopilot & NuttX OS</h3>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 第三页：项目案例 -->
-        <section class="page cases" id="page-3">
-            <div class="container">
-                <div class="cases-header">
-                    <h2 class="headline fade-in">项目案例</h2>
-                    <p class="body fade-in stagger-1" style="opacity: 0.7; margin-top: 1rem;">七年技术沉淀，万台设备验证</p>
-                </div>
-                
-                <div class="case-item fade-in stagger-1">
-                    <div class="case-meta">
-                        <div class="case-number">5000+</div>
-                        <p class="case-label">台设备部署</p>
-                    </div>
-                    <div class="case-content">
-                        <h3 class="title case-title">智能工业控制器</h3>
-                        <p class="body case-desc">为制造业客户开发的多轴运动控制系统，集成 ARM Cortex-A9 处理器，支持实时以太网通信，实现了毫秒级响应的精密控制。</p>
-                        <div class="case-tech">
-                            <span class="tech-tag">ARM Cortex-A9</span>
-                            <span class="tech-tag">EtherCAT</span>
-                            <span class="tech-tag">Linux RT</span>
-                            <span class="tech-tag">Qt</span>
+            <!-- 8. Capabilities (Original) -->
+            <section class="page capabilities" id="page-8">
+                <div class="container">
+                    <h2 class="headline fade-in" style="text-align: center; margin-bottom: 4rem;">全栈产品工程能力</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                        <div class="spec-item fade-in stagger-1"
+                            style="background: #fff; color: #000; border: 1px solid #eee;">
+                            <h3 class="title">芯片选型与电路设计</h3>
+                            <p>从源头把控性能与成本，设计高可靠性电路。</p>
+                        </div>
+                        <div class="spec-item fade-in stagger-2"
+                            style="background: #fff; color: #000; border: 1px solid #eee;">
+                            <h3 class="title">驱动集成与应用开发</h3>
+                            <p>定制设备驱动，打造高效应用层，实现软硬一体。</p>
+                        </div>
+                        <div class="spec-item fade-in stagger-3"
+                            style="background: #fff; color: #000; border: 1px solid #eee;">
+                            <h3 class="title">快速原型与供应链</h3>
+                            <p>从概念到量产，提供全流程供应链执行服务。</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="case-item fade-in stagger-2">
-                    <div class="case-meta">
-                        <div class="case-number">30</div>
-                        <p class="case-label">天续航</p>
-                    </div>
-                    <div class="case-content">
-                        <h3 class="title case-title">物联网环境监测站</h3>
-                        <p class="body case-desc">部署在恶劣环境的无线监测设备，采用低功耗设计，太阳能供电，4G / NB-IoT 双模通信。单次充电可连续工作 30 天。</p>
-                        <div class="case-tech">
-                            <span class="tech-tag">STM32L4</span>
-                            <span class="tech-tag">NB-IoT</span>
-                            <span class="tech-tag">太阳能</span>
-                            <span class="tech-tag">LoRa</span>
-                        </div>
+            </section>
+
+            <!-- 9. Contact (Original) -->
+            <section class="page contact" id="page-9">
+                <div class="container" style="text-align: center;">
+                    <h2 class="headline fade-in">联系我们</h2>
+                    <div style="margin-top: 4rem;" class="fade-in stagger-1">
+                        <p class="title">info@aimorelogy.com</p>
+                        <p class="body" style="margin-top: 1rem;">深圳市宝安区西乡街道铁仔路28号朗骏广场2栋A座603-12</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
-        <!-- 第四页：联系我们 -->
-        <section class="page contact" id="page-4">
-            <div class="container">
-                <div class="contact-header">
-                    <h2 class="headline fade-in" style="color: var(--primary);">联系我们</h2>
-                </div>
-                
-                <div class="contact-grid">
-                    <div class="contact-item fade-in stagger-1">
-                        <div class="label contact-label">公司地址</div>
-                        <p class="body contact-value">中国广东省深圳市宝安区铁仔路 28 号<br>朗峻广场 2 栋 A 座 603-12 室</p>
-                    </div>
-                    
-                    <div class="contact-item fade-in stagger-2">
-                        <div class="label contact-label">邮箱地址</div>
-                        <p class="body contact-value">info@aimorelogy.com</p>
-                    </div>
-                </div>
-                
-                <div class="contact-cta fade-in">
-                    <p class="title android-safe" style="color: var(--primary);">让我们一起，把想法变成现实</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>© 深圳市爱谋科技有限公司 保留所有权利</p>
-        </div>
-    </footer>
-
-    <script>
-        // ========== 边栏菜单控制 ==========
-        const menuTrigger = document.getElementById('menuTrigger');
-        const sidebar = document.getElementById('sidebar');
-        const sidebarOverlay = document.getElementById('sidebarOverlay');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        function toggleSidebar() {
-            const isOpen = sidebar.classList.contains('open');
-            
-            if (isOpen) {
-                sidebar.classList.remove('open');
-                sidebarOverlay.classList.remove('active');
-                menuTrigger.classList.remove('active');
-                document.body.style.overflow = '';
-            } else {
-                sidebar.classList.add('open');
-                sidebarOverlay.classList.add('active');
-                menuTrigger.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-        }
-
-        menuTrigger.addEventListener('click', toggleSidebar);
-        sidebarOverlay.addEventListener('click', toggleSidebar);
-
-        // 菜单链接点击
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const target = link.getAttribute('href');
-                document.querySelector(target).scrollIntoView({ 
-                    behavior: 'smooth' 
-                });
-                
-                // 移动端关闭菜单
-                if (window.innerWidth <= 768) {
-                    toggleSidebar();
-                }
-            });
-        });
-
-        // ========== 导航点控制 ==========
-        const navDots = document.querySelectorAll('.nav-dot');
-        const pages = document.querySelectorAll('.page');
-
-        navDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                document.getElementById(`page-${index + 1}`).scrollIntoView({ 
-                    behavior: 'smooth' 
-                });
-            });
-        });
-
-        // ========== 滚动更新导航状态 ==========
-        function updateNavigation() {
-            let current = 0;
-            
-            pages.forEach((page, index) => {
-                const rect = page.getBoundingClientRect();
-                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-                    current = index;
-                }
-            });
-            
-            // 更新导航点
-            navDots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === current);
-            });
-            
-            // 更新菜单链接
-            navLinks.forEach((link, index) => {
-                link.classList.toggle('active', index === current);
-            });
-        }
-
-        // ========== 动画触发 ==========
-        function animateElements() {
-            const elements = document.querySelectorAll('.fade-in');
-            
-            elements.forEach(element => {
-                const rect = element.getBoundingClientRect();
-                const isVisible = rect.top < window.innerHeight * 0.8;
-                
-                if (isVisible) {
-                    element.classList.add('visible');
-                }
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            animateElements();
-            updateNavigation();
-        });
-
-        // ========== 键盘导航 ==========
-        document.addEventListener('keydown', (e) => {
-            const currentDot = document.querySelector('.nav-dot.active');
-            const currentIndex = Array.from(navDots).indexOf(currentDot);
-            
-            if (e.key === 'ArrowDown' || e.key === ' ') {
-                e.preventDefault();
-                const nextIndex = Math.min(currentIndex + 1, pages.length - 1);
-                document.getElementById(`page-${nextIndex + 1}`).scrollIntoView({ 
-                    behavior: 'smooth' 
-                });
-            } else if (e.key === 'ArrowUp') {
-                e.preventDefault();
-                const prevIndex = Math.max(currentIndex - 1, 0);
-                document.getElementById(`page-${prevIndex + 1}`).scrollIntoView({ 
-                    behavior: 'smooth' 
-                });
-            } else if (e.key === 'Escape') {
-                if (sidebar.classList.contains('open')) {
-                    toggleSidebar();
-                }
-            }
-        });
-
-        // ========== 事件监听 ==========
-        let ticking = false;
-        
-        function onScroll() {
-            if (!ticking) {
-                requestAnimationFrame(() => {
-                    updateNavigation();
-                    animateElements();
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        }
-
-        window.addEventListener('scroll', onScroll);
-        window.addEventListener('load', () => {
-            animateElements();
-            updateNavigation();
-            
-            // 检测设备类型，仅对Android进行特殊优化
-            const isAndroid = /Android/.test(navigator.userAgent);
-            console.log('设备检测:', isAndroid ? 'Android设备' : '非Android设备');
-            
-            if (isAndroid) {
-                // 仅在Android设备上处理字体问题
-                const displayElements = document.querySelectorAll('.display');
-                displayElements.forEach(element => {
-                    // 保持原有样式，只调整字重避免不可见
-                    if (element.style.fontWeight === '100' || window.getComputedStyle(element).fontWeight === '100') {
-                        element.style.fontWeight = '200'; // 仅在Android上调整
-                        element.style.webkitFontSmoothing = 'antialiased';
-                        element.style.transform = 'translateZ(0)';
-                        console.log('Android优化:', element.textContent);
-                    }
-                });
-                
-                // 特别处理android-safe元素
-                const androidSafeElements = document.querySelectorAll('.android-safe');
-                androidSafeElements.forEach(element => {
-                    element.style.opacity = '1';
-                    element.style.visibility = 'visible';
-                    element.style.transform = 'translateZ(0)';
-                });
-            }
-        });
-
-        // ========== 移动端优化 ==========
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768 && sidebar.classList.contains('open')) {
-                document.body.style.overflow = '';
-            }
-        });
-
-        // ========== GitHub Pages 兼容性 ==========
-        if (window.location.hostname.includes('github.io')) {
-            console.log('GitHub Pages 环境检测到');
-        }
-    </script>
+        <script src="../js/main.js"></script>
 </body>
+
 </html>
